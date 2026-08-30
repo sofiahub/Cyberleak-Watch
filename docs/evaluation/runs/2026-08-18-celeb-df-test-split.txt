@@ -1,0 +1,67 @@
+LFW verification
+  pairs scored     : 6000 (3000 genuine, 3000 impostor)
+  pairs skipped    : 0 (no detectable face)
+  Accuracy (10-fold CV) : 0.9985 ± 0.0007
+  AUC              : 0.9993
+  EER              : 0.0023 at threshold 0.1911
+  TAR @ FAR 1e-3   : 0.9973 at threshold 0.2524
+  TAR @ FAR 1e-4   : N/A (need 10000 impostor pairs; have 3000) at threshold N/A
+Deepfake match-rate experiment
+  threshold (LFW FAR 1e-3) : 0.2524
+  videos scored            : 340
+  own-identity match rate  : 0.9882 (score >= threshold)
+  rank-1 identification    : 0.5824 (own identity ranks highest)
+  per identity:
+    id0                        14 videos  match 1.0000  rank-1 0.7857  own 0.4458  other 0.3618
+    id1                        16 videos  match 1.0000  rank-1 0.8125  own 0.4622  other 0.4155
+    id10                        5 videos  match 0.8000  rank-1 0.8000  own 0.4790  other 0.4460
+    id11                        4 videos  match 1.0000  rank-1 1.0000  own 0.4270  other 0.3268
+    id12                        2 videos  match 1.0000  rank-1 1.0000  own 0.5531  other 0.2985
+    id13                        4 videos  match 1.0000  rank-1 1.0000  own 0.4639  other 0.3766
+    id16                       17 videos  match 1.0000  rank-1 0.7059  own 0.4893  other 0.4511
+    id17                        1 videos  match 1.0000  rank-1 1.0000  own 0.5147  other 0.3910
+    id19                        8 videos  match 0.8750  rank-1 0.2500  own 0.4123  other 0.5127
+    id2                        21 videos  match 1.0000  rank-1 0.8571  own 0.4945  other 0.4110
+    id20                       19 videos  match 1.0000  rank-1 0.2632  own 0.3937  other 0.4614
+    id21                       16 videos  match 1.0000  rank-1 0.6250  own 0.4348  other 0.4453
+    id22                        1 videos  match 1.0000  rank-1 1.0000  own 0.5304  other 0.2330
+    id23                       14 videos  match 0.9286  rank-1 0.2143  own 0.3928  other 0.4907
+    id24                        2 videos  match 1.0000  rank-1 0.0000  own 0.3718  other 0.4142
+    id25                        2 videos  match 1.0000  rank-1 0.5000  own 0.3602  other 0.4792
+    id26                       14 videos  match 1.0000  rank-1 0.7143  own 0.5091  other 0.4456
+    id27                        2 videos  match 1.0000  rank-1 0.0000  own 0.3698  other 0.4788
+    id28                       20 videos  match 0.9500  rank-1 0.1500  own 0.3409  other 0.4596
+    id29                        3 videos  match 1.0000  rank-1 0.0000  own 0.3831  other 0.6092
+    id3                        26 videos  match 1.0000  rank-1 0.6154  own 0.4492  other 0.4233
+    id30                        6 videos  match 1.0000  rank-1 0.8333  own 0.4985  other 0.4564
+    id31                        9 videos  match 1.0000  rank-1 0.6667  own 0.4316  other 0.4144
+    id32                        6 videos  match 1.0000  rank-1 0.0000  own 0.4407  other 0.4988
+    id33                        7 videos  match 1.0000  rank-1 0.2857  own 0.3563  other 0.4540
+    id34                        5 videos  match 1.0000  rank-1 0.4000  own 0.4083  other 0.4939
+    id35                        7 videos  match 1.0000  rank-1 0.4286  own 0.3900  other 0.4583
+    id37                        5 videos  match 1.0000  rank-1 1.0000  own 0.5278  other 0.4053
+    id38                        3 videos  match 1.0000  rank-1 0.6667  own 0.4560  other 0.3979
+    id39                        3 videos  match 1.0000  rank-1 1.0000  own 0.4523  other 0.2654
+    id4                         7 videos  match 1.0000  rank-1 0.1429  own 0.4305  other 0.5599
+    id40                        2 videos  match 1.0000  rank-1 0.5000  own 0.5156  other 0.4462
+    id41                        3 videos  match 1.0000  rank-1 0.6667  own 0.4049  other 0.3490
+    id42                        1 videos  match 1.0000  rank-1 1.0000  own 0.5447  other 0.2736
+    id43                        1 videos  match 1.0000  rank-1 1.0000  own 0.4512  other 0.2342
+    id44                        2 videos  match 1.0000  rank-1 1.0000  own 0.5433  other 0.4192
+    id45                        3 videos  match 1.0000  rank-1 1.0000  own 0.4967  other 0.2873
+    id47                        3 videos  match 1.0000  rank-1 0.3333  own 0.4327  other 0.4124
+    id49                        2 videos  match 1.0000  rank-1 0.0000  own 0.4333  other 0.5381
+    id5                         1 videos  match 1.0000  rank-1 1.0000  own 0.5412  other 0.1726
+    id50                        2 videos  match 1.0000  rank-1 0.5000  own 0.4769  other 0.4253
+    id51                        2 videos  match 1.0000  rank-1 0.5000  own 0.4096  other 0.4353
+    id52                        3 videos  match 1.0000  rank-1 0.6667  own 0.4693  other 0.4114
+    id53                        2 videos  match 1.0000  rank-1 1.0000  own 0.4445  other 0.3448
+    id54                        1 videos  match 1.0000  rank-1 0.0000  own 0.4505  other 0.4674
+    id55                        1 videos  match 1.0000  rank-1 1.0000  own 0.5269  other 0.3825
+    id56                        3 videos  match 1.0000  rank-1 0.0000  own 0.4194  other 0.4986
+    id57                        5 videos  match 1.0000  rank-1 0.6000  own 0.4736  other 0.5449
+    id58                        3 videos  match 1.0000  rank-1 0.6667  own 0.4512  other 0.4290
+    id6                        14 videos  match 1.0000  rank-1 0.7143  own 0.4494  other 0.3860
+    id7                         8 videos  match 1.0000  rank-1 0.8750  own 0.5032  other 0.3718
+    id9                         9 videos  match 1.0000  rank-1 0.8889  own 0.5083  other 0.3883
+[exited with code 0]
